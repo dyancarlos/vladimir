@@ -1,0 +1,15 @@
+<h1>Endpoints Overview:</h1>
+
+<% @endpoints.each do |endpoint| %>
+  
+  <ul>
+    <li>
+      <b><%= endpoint[0] %></b>
+      <ul>
+        <li><b>File:</b> <%= endpoint[1]["file"] %></li>
+        <li><b>Endpoint:</b> /<%= endpoint[1]["endpoint"] %></li>
+      </ul>
+    </li>
+  </ul>
+  
+<% end %>

@@ -14,5 +14,7 @@
 
 class Vladimir < Sinatra::Base
   get "/" do
+    @endpoints = YAML.load_file("config/endpoints.yml")
+    erb :index
   end
 end
