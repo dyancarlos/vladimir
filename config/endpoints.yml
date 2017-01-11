@@ -1,0 +1,7 @@
+products:
+  file: products.json
+  endpoint: products # URL: /products
+
+clients:
+  file: clients.json
+  endpoint: clients # URL: /clients
