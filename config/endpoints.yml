@@ -1,7 +1,7 @@
-products:
-  file: products.json
-  endpoint: /products # URL: /products
+# Instructions:
+#
+# endpoint:
+#   file: example.json
 
-clients:
-  file: clients.json
-  endpoint: /clients # URL: /clients
+example: 
+  file: example.json
