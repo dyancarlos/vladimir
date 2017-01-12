@@ -4,5 +4,10 @@ require 'bundler'
 
 Bundler.require
 
-require './Vladimir'
-run Vladimir
+require_relative 'controllers/application_controller'
+require_relative 'controllers/vladimir_controller'
+require_relative 'controllers/mock_controller'
+
+run ApplicationController
+use VladimirController
+use MockController
