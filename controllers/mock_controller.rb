@@ -1,7 +1,7 @@
 class MockController < ApplicationController
 
   get "/mock" do
-    "instructions"
+    redirect "/"
   end
 
   get "/mock/error" do

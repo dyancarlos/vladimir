@@ -3,5 +3,5 @@
 # endpoint:
 #   file: example.json
 
-example: 
+example:
   file: example.json
