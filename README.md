@@ -18,8 +18,8 @@ example:
 1. Clone project from https://github.com/dyancarlos/vladimir.git
 2. Inside the project run `bundle install` to install the dependencies
 3. After this, to start the app run `rackup`
-4. Now the app will be running on 'http://localhost:9292'
-5. Try accessing 'http://localhost:9292/mock/example'
+4. Now the app will be running on `http://localhost:92921`
+5. Try accessing `http://localhost:9292/mock/example`
 
 # License
 Copyright 2017 Dyan Carlos Carra
