@@ -15,8 +15,4 @@ class MockController < ApplicationController
     end
   end
 
-  private
-  def path_to_file
-    File.dirname(__FILE__).gsub("/controllers", "")
-  end
 end
