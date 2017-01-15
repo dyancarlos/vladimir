@@ -8,11 +8,15 @@ class MockController < ApplicationController
     content_type :json
 
     begin
-      endpoints = YAML.load_file("config/endpoints.yml")
-      return File.read("endpoints_files/#{endpoints[params["name"]]["file"]}")
+      endpoints = YAML.load_file("#{path_to_file}/config/endpoints.yml")
+      send_file "#{path_to_file}/endpoints_files/#{endpoints[params["name"]]["file"]}", status: 200
     rescue
       redirect "/error"
     end
   end
 
+  private
+  def path_to_file
+    File.dirname(__FILE__).gsub("/controllers", "")
+  end
 end
